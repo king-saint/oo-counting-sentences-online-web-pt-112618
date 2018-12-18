@@ -24,10 +24,11 @@ class String
   def count_sentences
     count = 0
     new = []
-      new << self.split(%r{(\"!"|\"."|\/|\"?")})
+      new << self.split({(\"!"|\"."|\/|\"?")})
         if new.length == 0 || new.length == 1
           return 0 
         else
+          
           new.length
     end
   end
