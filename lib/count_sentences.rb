@@ -24,7 +24,7 @@ class String
   def count_sentences
     count = 0
     regex = /(!|?|.)/
-    new = self.scan()
+    new = regex.scan(self)
         if new.length == 0 || new.length == 1
           return 0 
         else
