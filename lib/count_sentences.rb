@@ -25,7 +25,7 @@ class String
     count = 0
     new = []
       new << self.split(%r{(\"!"|\"."|\/|\"?")})
-        if new.length == 0
+        if new.length == 0 || new.length == 1
           return 0 
         else
           new.length
