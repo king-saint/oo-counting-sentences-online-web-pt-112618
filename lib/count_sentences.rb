@@ -27,9 +27,8 @@ class String
         if new.length == 0 || new.length == 1
           return 0 
         else
-          
           new.length
-    end
-  end
+        end
+     end
   
 end
